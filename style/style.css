@@ -94,9 +94,19 @@ nav.navbar {
     width: 6rem;
     margin: 2rem;
 }
-.skills .col-md-4 {
+.skills .container {
+    padding: 0;
+}
+.skills .col-md-3 {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.skills .titles {
+    text-align: center;
+}
+.skills .descript {
+    text-align: justify;
 }
 
 
@@ -145,4 +155,100 @@ footer a {
 footer a:hover {
     text-decoration: none;
     color: black;
+}
+
+
+/* MOBILE DEVICE ================================ */
+
+@media (max-width: 575.98px) { 
+    body {
+        overflow-x: hidden;
+    }
+    .navbar-toggler {
+        color: #4b1010;
+        /* background-color: #4b1010; */
+    }
+    .navbar-toggler .navbar-toggler-icon{
+        color: #4b1010;
+        /* background-color: #4b1010; */
+    }
+    .hero{
+        display: block;
+    }
+    .hero .row .col-md-4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero .col-md-4 .foto-fahmi {
+        width: 15rem;
+    }
+    .hero .col-md-4 .shadow-img {
+        width: 13rem;
+    }
+    .hero .col-md-8 {
+        padding-inline: 2rem;
+    }
+    .hero .name {
+        font-size: 4rem;
+    }
+    .hero .profesion {
+        font-size: 2rem;
+    }
+    .hero  svg{
+        position: absolute;
+        width: 24rem;
+        top: 5rem;
+        left: -2rem;
+    }
+    .linkedin, .github, .drible, .email {
+        font-size: 23px;
+    }
+    .about {
+        padding-top: 4rem;
+    }
+    .hero .about {
+        position: relative;
+        top: 3rem;
+        text-align: justify;
+    }
+    
+
+    .skills {
+       padding-inline: 2rem;
+    }
+    .skills .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .portofolio {
+        /* display: none; */
+    }
+    .portofolio .graphic .row .col-md-4 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .portofolio .graphic img{
+        margin-block: .5rem;
+    }
+    .contact {
+        padding-bottom: 0rem;
+    }
+    .contact .col-md-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 3rem;
+    }
+
+    .footer {
+        /* display: none; */
+    }
 }
