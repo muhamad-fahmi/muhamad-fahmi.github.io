@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:wght@900&display=swap');
+body {
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+nav.navbar {
+    padding-block: 1rem;
+    background-color:white;
+    /* #4b1010 */
+}
+.navbar-brand img{
+    width: 5rem;
+}
+.navbar .navbar-nav .nav-link {
+    color:#4b1010;
+    margin-left: 1.5rem;
+}
+.hero {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+.hero img {
+    width: 20rem;
+}
+.hero .row .col-md-4 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero .col-md-4 .foto-fahmi {
+    position: relative; 
+    z-index: 1000;
+}
+.hero .col-md-4 .shadow-img {
+    position: relative; 
+    top: -.55rem;
+    width: 18rem;
+    z-index: 10;
+}
+.hero .col-md-4 .shadow-img .show {
+    position: relative; 
+    top: -.55rem;
+    width: 18rem;
+    z-index: 10;
+}
+.hero svg {
+    position: absolute;
+    width: 30rem;
+    top: 8rem;
+    left: -2rem;
+
+}
+.hero .col-md-8 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-left: 4rem;
+}
+.hero .name {
+    color:#940C10;
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.hero .profesion {
+    font-family: 'PT Sans', sans-serif;
+    margin-bottom: 2.5rem;
+}
+.hero .about {
+    position: absolute;
+    bottom: 0;
+}
+
+.linkedin, .github, .drible, .email {
+    font-size: 21px;
+}
+
+.title {
+    color:#940C10;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 3rem;
+}
+
+.skills{
+    padding-block: 5rem;
+}
+.skills img{
+    width: 6rem;
+    margin: 2rem;
+}
+.skills .col-md-4 {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.portofolio {
+    padding-block: 5rem;
+}
+.portofolio .col-md-4 img {
+    width: 20rem;
+}
+.portofolio .software {
+    padding-block: 5rem;
+}
+.portofolio .graphic {
+    display: none;
+}
+.portofolio a:hover {
+    cursor: pointer;
+}
+
+.contact {
+    padding-block: 5rem;
+}
+.contact .col-md-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.footer {
+    padding-top: 4rem;
+    bottom: 0;
+}
+footer {
+    bottom: 0;
+    background-color: var(--maincolor1);
+    padding-block: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+}
+footer a:hover {
+    text-decoration: none;
+    color: black;
+}
