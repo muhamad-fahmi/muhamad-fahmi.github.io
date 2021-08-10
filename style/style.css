@@ -102,8 +102,13 @@ nav.navbar {
     justify-content: center;
     align-items: center;
 }
+.skills .col-md-9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .skills .titles {
-    text-align: center;
+    text-align: left;
 }
 .skills .descript {
     text-align: justify;
@@ -115,19 +120,29 @@ nav.navbar {
 }
 .portofolio .col-md-4 img {
     width: 20rem;
+    margin-block: 1.6rem;
+    border-radius: 10px;
 }
 .portofolio .software {
     padding-block: 5rem;
 }
 .portofolio .graphic {
     display: none;
+    margin-top: 4rem;
 }
 .portofolio a:hover {
     cursor: pointer;
 }
+.portofolio .nav-item .nav-link{
+    color: #4b1010;
+}
+.portofolio .subtitle {
+    margin-bottom: 4rem;
+}
 
 .contact {
-    padding-block: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
 }
 .contact .col-md-3 {
     display: flex;
