@@ -120,7 +120,8 @@ p {
 
 
 .portofolio {
-    padding-block: 5rem;
+    padding-top:1rem;
+    padding-bottom: 0rem;
 }
 .portofolio .col-md-4 img {
     width: 20rem;

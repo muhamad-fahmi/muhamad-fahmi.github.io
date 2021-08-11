@@ -1,7 +1,6 @@
 $(document).ready(function() {
    
     $(window).scroll(function() {
-      // checks if window is scrolled more than 500px, adds/removes solid class
       if($(this).scrollTop() > 240) { 
         var x = window.matchMedia("(max-width: 700px)")
         if(x.matches) {
@@ -16,6 +15,53 @@ $(document).ready(function() {
         }
       } else {
         $('.hero .col-md-4 .shadow-img').show();
+        $('.hero .col-md-8 .name').removeClass('animate__slideInUp');
+        $('.hero .col-md-8 .profesion').removeClass('animate__slideInUp');
+        $('.hero .col-md-8 .sosmed').removeClass('animate__slideInUp');
+      }
+
+      if($(this).scrollTop() > 450) { 
+        var x = window.matchMedia("(max-width: 700px)")
+        if(x.matches) {
+            $('.hero .col-md-8 .about').addClass('animate__slideInUp');
+        }else {
+            console.log('perangkat desktop')
+        }
+      } else {
+        $('.hero .col-md-8 .about').removeClass('animate__slideInUp');
+      }
+
+      if($(this).scrollTop() > 650) { 
+        var x = window.matchMedia("(max-width: 700px)")
+        if(x.matches) {
+            $('.skills').addClass('animate__slideInUp');
+        }else {
+            console.log('perangkat desktop')
+        }
+      } else {
+        $('.skills').removeClass('animate__slideInUp');
+      }
+
+      if($(this).scrollTop() > 1650) { 
+        var x = window.matchMedia("(max-width: 700px)")
+        if(x.matches) {
+            $('.portofolio').addClass('animate__slideInUp');
+        }else {
+            console.log('perangkat desktop')
+        }
+      } else {
+        $('.portofolio').removeClass('animate__slideInUp');
+      }
+
+      if($(this).scrollTop() > 2050) { 
+        var x = window.matchMedia("(max-width: 700px)")
+        if(x.matches) {
+            $('.contact').addClass('animate__slideInUp');
+        }else {
+            console.log('perangkat desktop')
+        }
+      } else {
+        $('.contact').removeClass('animate__slideInUp');
       }
     });
 
