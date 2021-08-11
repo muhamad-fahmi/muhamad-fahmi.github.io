@@ -279,6 +279,7 @@ footer a:hover {
     }
     .contact {
         padding-bottom: 0rem;
+        padding-top: 3rem;
     }
     .contact .col-md-3 {
         display: flex;

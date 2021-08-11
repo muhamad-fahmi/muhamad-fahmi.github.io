@@ -194,9 +194,9 @@
                     </div>
                     <div class="col-md-9">
                         <form>
-                            <input type="text" name="nama" class="form-control mb-3 nama" placeholder="Type Your Name">
-                            <input type="text" name="nohp" class="form-control mb-3 nohp" placeholder="Type Your Phone Number">
-                            <textarea name="message" cols="30" rows="7" class="form-control mb-5 msg" placeholder="Type Your Message"></textarea>
+                            <input type="text" name="nama" class="form-control mb-3 nama" required placeholder="Type Your Name">
+                            <input type="text" name="nohp" class="form-control mb-3 nohp" required placeholder="Type Your Phone Number">
+                            <textarea name="message" cols="30" rows="7" class="form-control mb-5 msg" required placeholder="Type Your Message"></textarea>
                             <button type="submit" class="btn btn-outline-dark">Send Message</button>
                         </form>
                     </div>
@@ -204,7 +204,7 @@
 
 
                 <!-- MODAL -->
-                <div class="modal" tabindex="-1" role="dialog">
+                <div class="modal success" tabindex="-1" role="dialog">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
@@ -215,6 +215,32 @@
                         <div class="modal-body">
                         
                           <p class="text-center">Your message sent successfull !</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-outline-dark btn-sm" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fail" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                        
+                          <p class="text-center text-danger">Your message not sent successfull !</p>
+                          <p>
+                              <ul>
+                                  <li>Type your name</li>
+                                  <li>Type your number</li>
+                                  <li>Type your message for me!</li>
+                              </ul>
+                          </p>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-outline-dark btn-sm" data-dismiss="modal">Close</button>
@@ -242,7 +268,10 @@
                 var name = $('.nama').val();
                 var nohp = $('.nohp').val();
                 var msg = $('.msg').val();
-                var message = `
+                if(name == "" && nohp == "" && msg == ""){
+                    $('.modal.fail').modal('show');
+                }else{
+                    var message = `
                 Hi I am ${name}
 My phone number is ${nohp}
 ${msg}`;
@@ -253,10 +282,12 @@ ${msg}`;
                     method:'POST',
                     data:{chat_id:989986912,text:`${message}`},
                     success:function(){
-                        $('.modal').modal('show');
+                        $('.modal.success').modal('show');
                         $('form').trigger('reset');
                     }
                   });
+                }
+                
             });
         </script>
         <!-- <script src="./javascript/jquery.multilang.min.js"></script> -->
