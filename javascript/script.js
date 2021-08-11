@@ -32,5 +32,16 @@ $(document).ready(function() {
         $('.software').hide();
         $('.graphic').show();
     });
+
+    // $('#ex1').multilang(
+    //   {
+    //     pixFormat:'png',
+    //     pathToPix:'../assets/img/lang'
+    //   }
+    // );
+
+
+     
+    
 });
 
