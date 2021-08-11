@@ -226,6 +226,9 @@ footer a:hover {
         top: 5rem;
         left: -2rem;
     }
+    .title {
+        text-align: center;
+    }
     .linkedin, .github, .drible, .email {
         font-size: 23px;
     }
@@ -248,10 +251,13 @@ footer a:hover {
         justify-content: center;
         align-items: center;
     }
+    .skills .titles {
+        text-align: center;
+    }
 
 
-    .portofolio {
-        /* display: none; */
+    .portofolio .graphic{
+        padding-top:3rem;
     }
     .portofolio .graphic .row .col-md-4 {
         display: flex;
