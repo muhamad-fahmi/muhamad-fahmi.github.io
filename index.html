@@ -11,7 +11,7 @@
         <meta name="MobileOptimized" content="320"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style/bootstrap.css">
-        <link rel="stylesheet" href="./style/bootstrap-select.css">
+        <!-- <link rel="stylesheet" href="./style/bootstrap-select.csxs"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./style/animate.min.css">
         <link rel="stylesheet" href="./style/style.css">
@@ -203,54 +203,55 @@
                 </div>
 
 
-                <!-- MODAL -->
-                <div class="modal success" tabindex="-1" role="dialog">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                        
-                          <p class="text-center">Your message sent successfull !</p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-outline-dark btn-sm" data-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="modal fail" tabindex="-1" role="dialog">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                        
-                          <p class="text-center text-danger">Your message not sent successfull !</p>
-                          <p>
-                              <ul>
-                                  <li>Type your name</li>
-                                  <li>Type your number</li>
-                                  <li>Type your message for me!</li>
-                              </ul>
-                          </p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-outline-dark btn-sm" data-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- END MODAL -->
+              
             </div>
         </div>
+
+        <!-- MODAL -->
+        <div class="modal" id="success" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                
+                <p class="text-center">Your message sent successfull !</p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark btn-sm" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="modal" id="fail" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                
+                <p class="text-center text-danger">Your message not sent successfull !</p>
+                <p>
+                    <ul>
+                        <li>Type your name</li>
+                        <li>Type your number</li>
+                        <li>Type your message for me!</li>
+                    </ul>
+                </p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark btn-sm" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- END MODAL -->
 
         <div class="footer">
             <footer>
@@ -269,7 +270,7 @@
                 var nohp = $('.nohp').val();
                 var msg = $('.msg').val();
                 if(name == "" && nohp == "" && msg == ""){
-                    $('.modal.fail').modal('show');
+                    $('.modal#fail').modal('show');
                 }else{
                     var message = `
                 Hi I am ${name}
@@ -282,7 +283,7 @@ ${msg}`;
                     method:'POST',
                     data:{chat_id:989986912,text:`${message}`},
                     success:function(){
-                        $('.modal.success').modal('show');
+                        $('.modal#success').modal('show');
                         $('form').trigger('reset');
                     }
                   });
@@ -293,7 +294,6 @@ ${msg}`;
         <!-- <script src="./javascript/jquery.multilang.min.js"></script> -->
         <!-- <script src="./javascript/langs.min.js"></script> -->
         <script src="./javascript/bootstrap.min.js"></script>
-        <script src="./javascript/bootstrap-select.js"></script>
         <script src="./javascript/script.js"></script>
         <!-- END SCRIPT -->
     </body>

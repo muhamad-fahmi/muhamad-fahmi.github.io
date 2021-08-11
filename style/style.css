@@ -164,9 +164,10 @@ p {
     flex-direction: column;
     justify-content: center;
 }
-.contact .modal .modal-content .modal-header, .contact .modal .modal-content .modal-footer {
+.modal .modal-content .modal-header, .modal .modal-content .modal-footer {
     border : none;
 }
+
 
 
 .footer {
