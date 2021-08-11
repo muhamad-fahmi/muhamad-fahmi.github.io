@@ -61,7 +61,7 @@ $(document).ready(function() {
           scrolls(240, "hero");
           scrolls(450, "about");
           scrolls(650, "skills");
-          scrolls(1250, "porto");
+          scrolls(950, "porto");
           scrolls(1750, "contact");
       }
 
