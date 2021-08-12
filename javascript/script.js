@@ -86,6 +86,7 @@ $(document).ready(function() {
         $('.graphic').show();
     });
 
+      
     // $('#ex1').multilang(
     //   {
     //     pixFormat:'png',
