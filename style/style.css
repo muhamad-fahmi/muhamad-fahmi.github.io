@@ -154,6 +154,10 @@ p {
 .portofolio .subtitle {
     margin-bottom: 4rem;
 }
+.portofolio .webporto img:hover{
+    width: 21rem;
+    transition:1s;
+}
 
 .contact {
     padding-top: 1rem;
