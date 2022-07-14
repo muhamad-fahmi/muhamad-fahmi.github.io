@@ -140,7 +140,7 @@ ${msg}`;
 
     });
 
-    for (let index = 1; index < 11; index++) {
+    for (let index = 1; index < 15; index++) {
         $(`#image${index}`).click(() => {
             if (index == 1) {
                 $('.modal .modal-footer .btn-primary').attr('href', './assets/img/portofolios/portodesign1.webp');
@@ -181,6 +181,18 @@ ${msg}`;
             } else if (index == 10) {
                 $('.modal .modal-footer .btn-primary').attr('href', './assets/img/portofolios/schematik.pdf');
                 $(".modal .modal-body center").empty().append("<img src='./assets/img/portofolios/pcb_design_smart_module.jpg' class='image-priview-modal'>");
+                $('#ModalCenter').modal('show');
+            } else if (index == 11) {
+                $('.modal .modal-footer .btn-primary').attr('href', './assets/img/portofolios/3D/HDA_PROJ');
+                $(".modal .modal-body center").empty().append("<img src='./assets/img/portofolios/product-1.jpg' class='image-priview-modal'>");
+                $('#ModalCenter').modal('show');
+            } else if (index == 12) {
+                $('.modal .modal-footer .btn-primary').attr('href', './assets/img/portofolios/logo-outoria.jpg');
+                $(".modal .modal-body center").empty().append("<img src='./assets/img/portofolios/logo-outoria.jpg' class='image-priview-modal'>");
+                $('#ModalCenter').modal('show');
+            } else if (index == 13) {
+                $('.modal .modal-footer .btn-primary').attr('href', './assets/img/portofolios/logo-nacavibe.jpg');
+                $(".modal .modal-body center").empty().append("<img src='./assets/img/portofolios/logo-nacavibe.jpg' class='image-priview-modal'>");
                 $('#ModalCenter').modal('show');
             }
         });
