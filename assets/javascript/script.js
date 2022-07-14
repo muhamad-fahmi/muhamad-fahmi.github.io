@@ -183,7 +183,7 @@ ${msg}`;
                 $(".modal .modal-body center").empty().append("<img src='./assets/img/portofolios/pcb_design_smart_module.jpg' class='image-priview-modal'>");
                 $('#ModalCenter').modal('show');
             } else if (index == 11) {
-                $('.modal .modal-footer .btn-primary').attr('href', './assets/img/portofolios/3D/HDA_PROJ');
+                $('.modal .modal-footer .btn-primary').attr('href', 'https://drive.google.com/drive/folders/1gW94E6lpW8Pa-xY7-Taz7Cs3vxz3iIJK?usp=sharing');
                 $(".modal .modal-body center").empty().append("<img src='./assets/img/portofolios/product-1.jpg' class='image-priview-modal'>");
                 $('#ModalCenter').modal('show');
             } else if (index == 12) {
