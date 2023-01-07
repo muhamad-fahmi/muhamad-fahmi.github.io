@@ -155,6 +155,20 @@ p {
     text-align: justify;
 }
 
+.skills.tools {
+    padding-block: 3rem;
+}
+
+.skills .owl-carousel.tools .owl-item img {
+    width: 3rem;
+}
+
+.skills .owl-carousel.tools .owl-item .card {
+    cursor: grab;
+    width: 12rem;
+    height: 7rem;
+}
+
 
 /* .nav-tabs {
     border: 0px !important;
@@ -179,7 +193,7 @@ p {
 
 
 .portofolio {
-    padding-top: 1rem;
+    padding-top: 3rem;
     padding-bottom: 0rem;
 }
 
