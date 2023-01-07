@@ -137,13 +137,17 @@ ${msg}`;
 
 	$('.owl-carousel').owlCarousel({
 		loop: true,
-		margin: 29,
+		margin: 10,
 		center: true,
 		responsiveClass: true,
 		responsive: {
 			0: {
 				items: 2,
-				nav: false,
+				nav: true,
+				dots: false,
+				margin: 70,
+				center: true,
+				loop: true,
 			},
 			600: {
 				items: 3,

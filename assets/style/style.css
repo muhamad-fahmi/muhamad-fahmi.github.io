@@ -115,7 +115,7 @@ nav.navbar {
 .title {
     color: #940C10;
     font-family: 'Playfair Display', serif;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 p {
@@ -159,6 +159,10 @@ p {
     padding-block: 3rem;
 }
 
+.skills.tools .subtitle {
+    margin-bottom: 3rem;
+}
+
 .skills .owl-carousel.tools .owl-item img {
     width: 3rem;
 }
@@ -167,6 +171,9 @@ p {
     cursor: grab;
     width: 12rem;
     height: 7rem;
+}
+.skills .owl-carousel.tools .owl-wrapper {
+    margin: 0 auto;
 }
 
 
