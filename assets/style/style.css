@@ -172,6 +172,11 @@ p {
     display: none;
 }
 
+.skills .logo-tools {
+    width: 50px;
+}
+
+
 .portofolio {
     padding-top: 1rem;
     padding-bottom: 0rem;
@@ -388,4 +393,20 @@ footer a:hover {
     .footer {
         /* display: none; */
     }
+}
+
+
+
+
+iframe {
+    
+    position: fixed;
+    top: 12px;
+    left: 0px;
+    right: 0;
+    bottom: 0px;
+    height:calc(100vh - 4px);
+    width: 23rem;
+    margin-left: auto;
+    border: 0px !important;
 }
