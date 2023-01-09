@@ -140,6 +140,9 @@ ${msg}`;
 		margin: 10,
 		center: true,
 		responsiveClass: true,
+		autoplay:true,
+                autoplayTimeout:1000,
+                autoplayHoverPause:true,
 		responsive: {
 			0: {
 				items: 2,
